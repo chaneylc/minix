@@ -136,10 +136,12 @@ then
 	fi
 fi
 
+
+rm -rf ${OBJ_DIR}
 #
 # Artifacts from this script are stored in the IMG_DIR
 #
-rm -rf ${IMG_DIR}
+# rm -rf ${IMG_DIR}
 
 if [ -f ${IMG} ]	# IMG might be a block device
 then	rm -f ${IMG}
